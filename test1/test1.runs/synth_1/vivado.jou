@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec 16 11:49:43 2024
+# Process ID: 8401
+# Current directory: /home/md304/ub325313/mips-20240724/test1/test1.runs/synth_1
+# Command line: vivado -log fpga_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_top.tcl
+# Log file: /home/md304/ub325313/mips-20240724/test1/test1.runs/synth_1/fpga_top.vds
+# Journal file: /home/md304/ub325313/mips-20240724/test1/test1.runs/synth_1/vivado.jou
+# Running On: y14c019.educ.cc.keio.ac.jp, OS: Linux, CPU Frequency: 2100.000 MHz, CPU Physical cores: 16, Host memory: 33125 MB
+#-----------------------------------------------------------
+source fpga_top.tcl -notrace

@@ -1,0 +1,1539 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Jan  6 15:19:47 2025
+# Process ID: 209411
+# Current directory: /home/md304/ub325313/T/hard
+# Command line: vivado -mode batch -source script/bitgen.tcl
+# Log file: /home/md304/ub325313/T/hard/vivado.log
+# Journal file: /home/md304/ub325313/T/hard/vivado.jou
+# Running On: y14c019.educ.cc.keio.ac.jp, OS: Linux, CPU Frequency: 2100.000 MHz, CPU Physical cores: 16, Host memory: 33126 MB
+#-----------------------------------------------------------
+source script/bitgen.tcl
+# set project	"test1"
+# set program	"../soft/program.dat"
+# create_project	-force ${project} -part "xc7z010clg400-1"
+# import_files	-flat "top.v mips.v multdiv.v parts.v fpga.xdc" ${program}
+# synth_design	-top "fpga_top"
+Command: synth_design -top fpga_top
+Starting synth_design
+Using part: xc7z010clg400-1
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 209448
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2331.879 ; gain = 395.609 ; free physical = 23312 ; free virtual = 35965
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'jumpD', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:67]
+INFO: [Synth 8-11241] undeclared symbol 'cop0writeW', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:69]
+INFO: [Synth 8-11241] undeclared symbol 'halfwordE', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:71]
+INFO: [Synth 8-11241] undeclared symbol 'rfeE', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:71]
+INFO: [Synth 8-11241] undeclared symbol 'interrupt', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:91]
+INFO: [Synth 8-11241] undeclared symbol 'hiloselE', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:235]
+INFO: [Synth 8-11241] undeclared symbol 'iec', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:796]
+INFO: [Synth 8-11241] undeclared symbol 'cin', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:85]
+INFO: [Synth 8-11241] undeclared symbol 'cout', assumed default net type 'wire' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:97]
+INFO: [Synth 8-6157] synthesizing module 'fpga_top' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'mips' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:21]
+INFO: [Synth 8-6157] synthesizing module 'controller' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:130]
+INFO: [Synth 8-6157] synthesizing module 'maindec' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:247]
+INFO: [Synth 8-6155] done synthesizing module 'maindec' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:247]
+INFO: [Synth 8-6157] synthesizing module 'alushdec' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:300]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'alushdec' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:300]
+INFO: [Synth 8-6157] synthesizing module 'hilocontrol' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:402]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'hilocontrol' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:402]
+INFO: [Synth 8-6157] synthesizing module 'branchdec' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:364]
+INFO: [Synth 8-6155] done synthesizing module 'branchdec' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:364]
+INFO: [Synth 8-6157] synthesizing module 'branchcontroller' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1103]
+INFO: [Synth 8-6155] done synthesizing module 'branchcontroller' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1103]
+INFO: [Synth 8-6157] synthesizing module 'cop0dec' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:410]
+INFO: [Synth 8-6155] done synthesizing module 'cop0dec' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:410]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+	Parameter WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+	Parameter WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:130]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:421]
+INFO: [Synth 8-6157] synthesizing module 'fivebitdp' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1060]
+INFO: [Synth 8-6157] synthesizing module 'neqzerocmp' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:43]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neqzerocmp' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:43]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:31]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:31]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'fivebitdp' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1060]
+INFO: [Synth 8-6157] synthesizing module 'hazard' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:944]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:101]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'hazard' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:944]
+INFO: [Synth 8-6157] synthesizing module 'fetchstage' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:570]
+INFO: [Synth 8-6157] synthesizing module 'mux4' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6157] synthesizing module 'adder' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'fetchstage' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:570]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+INFO: [Synth 8-6157] synthesizing module 'flopenrc__parameterized3' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenrc__parameterized3' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:71]
+INFO: [Synth 8-6157] synthesizing module 'decodestage' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:605]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1213]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1213]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6157] synthesizing module 'signext' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:62]
+	Parameter INPUT bound to: 16 - type: integer 
+	Parameter OUTPUT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'signext' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:62]
+INFO: [Synth 8-6157] synthesizing module 'eqcmp__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'eqcmp__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:31]
+INFO: [Synth 8-6157] synthesizing module 'eqzerocmp' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'eqzerocmp' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:37]
+INFO: [Synth 8-6157] synthesizing module 'gtzerocmp' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'gtzerocmp' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:49]
+INFO: [Synth 8-6157] synthesizing module 'ltzerocmp' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'ltzerocmp' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:55]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'decodestage' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:605]
+INFO: [Synth 8-6157] synthesizing module 'executestage' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:657]
+INFO: [Synth 8-6157] synthesizing module 'alu' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1136]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1136]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1167]
+INFO: [Synth 8-6157] synthesizing module 'mux3__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1167]
+INFO: [Synth 8-6157] synthesizing module 'mdunit' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1191]
+INFO: [Synth 8-6157] synthesizing module 'multdiv' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:56]
+INFO: [Synth 8-6157] synthesizing module 'mdcontroller' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:120]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized3' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized3' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6157] synthesizing module 'flopen' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:92]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopen' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:92]
+INFO: [Synth 8-6157] synthesizing module 'inc' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:151]
+	Parameter WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'inc' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:151]
+INFO: [Synth 8-6155] done synthesizing module 'mdcontroller' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:120]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized4' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized4' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6157] synthesizing module 'boothsel' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:308]
+INFO: [Synth 8-6157] synthesizing module 'mux4__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+INFO: [Synth 8-6157] synthesizing module 'and2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:139]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'and2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'boothsel' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:308]
+INFO: [Synth 8-6157] synthesizing module 'zerodetect' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:158]
+INFO: [Synth 8-6155] done synthesizing module 'zerodetect' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:158]
+INFO: [Synth 8-6157] synthesizing module 'shl1r2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:284]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized3' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized3' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6155] done synthesizing module 'shl1r2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:284]
+INFO: [Synth 8-6157] synthesizing module 'mux3__parameterized1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+INFO: [Synth 8-6157] synthesizing module 'xor2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:145]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xor2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:145]
+INFO: [Synth 8-6157] synthesizing module 'adderc' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:23]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adderc' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized5' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 34 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized5' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6157] synthesizing module 'shl1r2__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:284]
+INFO: [Synth 8-6155] done synthesizing module 'shl1r2__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:284]
+INFO: [Synth 8-6157] synthesizing module 'mux4__parameterized1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'mux4__parameterized1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'multdiv' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/multdiv.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'mdunit' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:1191]
+INFO: [Synth 8-6155] done synthesizing module 'executestage' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:657]
+INFO: [Synth 8-6157] synthesizing module 'memorystage' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:719]
+INFO: [Synth 8-6157] synthesizing module 'dec2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'dec2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:133]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized4' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized4' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6157] synthesizing module 'mux3__parameterized2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:117]
+INFO: [Synth 8-6157] synthesizing module 'mux4__parameterized2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4__parameterized2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:124]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized5' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+	Parameter WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized5' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:110]
+INFO: [Synth 8-6157] synthesizing module 'signext__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:62]
+	Parameter INPUT bound to: 8 - type: integer 
+	Parameter OUTPUT bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'signext__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'memorystage' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:719]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:421]
+INFO: [Synth 8-6157] synthesizing module 'coprocessor0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:769]
+INFO: [Synth 8-6157] synthesizing module 'exceptionunit' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:818]
+INFO: [Synth 8-6157] synthesizing module 'prienc_8' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'prienc_8' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:164]
+INFO: [Synth 8-6155] done synthesizing module 'exceptionunit' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:818]
+INFO: [Synth 8-6157] synthesizing module 'epcunit' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:929]
+INFO: [Synth 8-6157] synthesizing module 'flopen__parameterized0' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:92]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopen__parameterized0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'epcunit' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:929]
+INFO: [Synth 8-6157] synthesizing module 'statusregunit' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:869]
+INFO: [Synth 8-6157] synthesizing module 'flopenr__parameterized6' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+	Parameter WIDTH bound to: 31 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr__parameterized6' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:82]
+INFO: [Synth 8-6157] synthesizing module 'flopen__parameterized1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:92]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopen__parameterized1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/parts.v:92]
+INFO: [Synth 8-6155] done synthesizing module 'statusregunit' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:869]
+INFO: [Synth 8-6157] synthesizing module 'causeregunit' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:916]
+INFO: [Synth 8-6155] done synthesizing module 'causeregunit' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:916]
+INFO: [Synth 8-6155] done synthesizing module 'coprocessor0' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:769]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/mips.v:21]
+INFO: [Synth 8-6157] synthesizing module 'spi' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:177]
+INFO: [Synth 8-6155] done synthesizing module 'spi' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:177]
+INFO: [Synth 8-6157] synthesizing module 'mem' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:135]
+INFO: [Synth 8-3876] $readmem data file 'program.dat' is read successfully [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:159]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:135]
+INFO: [Synth 8-6157] synthesizing module 'timer' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:114]
+INFO: [Synth 8-6155] done synthesizing module 'timer' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:114]
+INFO: [Synth 8-6157] synthesizing module 'rotary_enc1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:247]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:264]
+INFO: [Synth 8-6155] done synthesizing module 'rotary_enc1' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:247]
+WARNING: [Synth 8-689] width (8) of port connection 'rte_in' does not match port width (4) of module 'rotary_enc1' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:70]
+INFO: [Synth 8-6157] synthesizing module 'rotary_enc2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:300]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:317]
+INFO: [Synth 8-6155] done synthesizing module 'rotary_enc2' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:300]
+WARNING: [Synth 8-689] width (8) of port connection 'rte_in' does not match port width (4) of module 'rotary_enc2' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:71]
+INFO: [Synth 8-6157] synthesizing module 'beep' [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:353]
+INFO: [Synth 8-6155] done synthesizing module 'beep' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:353]
+INFO: [Synth 8-6155] done synthesizing module 'fpga_top' (0#1) [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/top.v:12]
+WARNING: [Synth 8-7129] Port reset in module mem is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[31] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[30] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[29] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[27] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[26] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[24] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[23] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[20] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[19] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[18] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[7] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[6] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[5] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[4] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[3] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[2] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[1] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port writedata[0] in module statusregunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module exceptionunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module exceptionunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[31] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[30] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[29] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[28] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[27] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[26] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[25] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[24] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[23] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[22] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[21] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[20] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[19] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[18] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[17] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[16] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[15] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[14] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[13] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[12] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[11] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[10] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[9] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[8] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[7] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[6] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[5] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[4] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[3] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluoutM[2] in module memorystage is either unconnected or has no load
+WARNING: [Synth 8-7129] Port yzero in module mdcontroller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port alushcontrol[2] in module mdunit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[31] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[10] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[9] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[8] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[7] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[6] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[5] in module shifter is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[30] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[29] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[28] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[27] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[26] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[25] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[24] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[23] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[22] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[21] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[20] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[19] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[18] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[17] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[16] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[15] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[14] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[13] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[12] in module ltzerocmp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port a[11] in module ltzerocmp is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2433.848 ; gain = 497.578 ; free physical = 23203 ; free virtual = 35857
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2445.723 ; gain = 509.453 ; free physical = 23195 ; free virtual = 35849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2445.723 ; gain = 509.453 ; free physical = 23195 ; free virtual = 35849
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2445.723 ; gain = 0.000 ; free physical = 23195 ; free virtual = 35849
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'iob[0]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:73]
+CRITICAL WARNING: [Common 17-1548] Command failed: invalid command name "/*set_property"
+ [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'iob[0]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[1]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[1]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[2]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[2]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[3]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[3]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[4]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[4]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[5]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[5]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[6]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[6]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[7]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[7]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:88]
+CRITICAL WARNING: [Common 17-161] Invalid option value '*/' specified for 'objects'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:88]
+Finished Parsing XDC File [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fpga_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/fpga_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.469 ; gain = 0.000 ; free physical = 23104 ; free virtual = 35758
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2591.504 ; gain = 0.000 ; free physical = 23103 ; free virtual = 35758
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23103 ; free virtual = 35758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23103 ; free virtual = 35758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23103 ; free virtual = 35757
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'spi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               00 |                               00
+                 iSTATE1 |                               01 |                               01
+                 iSTATE2 |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'spi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23102 ; free virtual = 35758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   35 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 7     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   22 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     34 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      2 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               34 Bit    Registers := 1     
+	               32 Bit    Registers := 25    
+	               31 Bit    Registers := 2     
+	               23 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 23    
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   34 Bit        Muxes := 8     
+	   2 Input   32 Bit        Muxes := 48    
+	   4 Input   32 Bit        Muxes := 1     
+	 673 Input   32 Bit        Muxes := 1     
+	   9 Input   32 Bit        Muxes := 1     
+	  19 Input   32 Bit        Muxes := 2     
+	  27 Input   32 Bit        Muxes := 1     
+	  25 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 3     
+	  27 Input   21 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	  27 Input   13 Bit        Muxes := 1     
+	  49 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 4     
+	   8 Input    7 Bit        Muxes := 2     
+	   5 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 13    
+	   5 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   8 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 6     
+	   9 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 46    
+	   5 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 4     
+	   9 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem         | RAM_reg    | 16 K x 32(READ_FIRST)  | W | R | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+--------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------+-----------+----------------------+--------------+
+|mips        | dp/decodestage/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+--------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem         | RAM_reg    | 16 K x 32(READ_FIRST)  | W | R | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+--------------------------+-----------+----------------------+--------------+
+|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives   | 
++------------+--------------------------+-----------+----------------------+--------------+
+|mips        | dp/decodestage/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+--------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance mem/RAM_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |   106|
+|3     |LUT1     |     9|
+|4     |LUT2     |   205|
+|5     |LUT3     |   381|
+|6     |LUT4     |   263|
+|7     |LUT5     |   489|
+|8     |LUT6     |   856|
+|9     |MUXF7    |    51|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |RAMB36E1 |    16|
+|28    |FDCE     |   847|
+|29    |FDPE     |     3|
+|30    |FDRE     |    42|
+|31    |IBUF     |    21|
+|32    |OBUF     |    24|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2591.504 ; gain = 509.453 ; free physical = 23093 ; free virtual = 35756
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2591.504 ; gain = 655.234 ; free physical = 23093 ; free virtual = 35756
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2591.504 ; gain = 0.000 ; free physical = 23382 ; free virtual = 36045
+INFO: [Netlist 29-17] Analyzing 187 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc]
+WARNING: [Vivado 12-584] No ports matched 'iob[0]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:73]
+CRITICAL WARNING: [Common 17-1548] Command failed: invalid command name "/*set_property"
+ [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'iob[0]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[1]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[1]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[2]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[2]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[3]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[3]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[4]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[4]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[5]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[5]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[6]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[6]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[7]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'iob[7]'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:88]
+CRITICAL WARNING: [Common 17-161] Invalid option value '*/' specified for 'objects'. [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc:88]
+Finished Parsing XDC File [/home/md304/ub325313/T/hard/test1.srcs/sources_1/imports/fpga.xdc]
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2655.500 ; gain = 0.000 ; free physical = 23382 ; free virtual = 36044
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: b53f5043
+INFO: [Common 17-83] Releasing license: Synthesis
+230 Infos, 135 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2655.535 ; gain = 1074.676 ; free physical = 23382 ; free virtual = 36044
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2151.325; main = 1855.782; forked = 438.799
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4185.957; main = 2655.504; forked = 1626.500
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2719.531 ; gain = 63.996 ; free physical = 23384 ; free virtual = 36047
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.69 . Memory (MB): peak = 2801.344 ; gain = 81.812 ; free physical = 23348 ; free virtual = 36011
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+Phase 1 Initialization | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+Phase 2 Timer Update And Timing Data Collection | Checksum: 2195bf1b1
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+
+Phase 3 Retarget
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 3 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 152a1adf4
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+Retarget | Checksum: 152a1adf4
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 16e88f326
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+Constant propagation | Checksum: 16e88f326
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 1e56aaf2b
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3052.281 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+Sweep | Checksum: 1e56aaf2b
+INFO: [Opt 31-389] Phase Sweep created 5 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1e56aaf2b
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+BUFG optimization | Checksum: 1e56aaf2b
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1e56aaf2b
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+Shift Register Optimization | Checksum: 1e56aaf2b
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1d5b2a708
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+Post Processing Netlist | Checksum: 1d5b2a708
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3084.297 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+Phase 9 Finalization | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               5  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3084.297 ; gain = 32.016 ; free physical = 23084 ; free virtual = 35747
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3084.297 ; gain = 0.000 ; free physical = 23084 ; free virtual = 35747
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23071 ; free virtual = 35734
+Ending Power Optimization Task | Checksum: 26b331446
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.48 . Memory (MB): peak = 3260.352 ; gain = 176.055 ; free physical = 23071 ; free virtual = 35734
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23071 ; free virtual = 35734
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23071 ; free virtual = 35734
+Ending Netlist Obfuscation Task | Checksum: 26b331446
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23071 ; free virtual = 35734
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+# place_design 
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23070 ; free virtual = 35733
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 197bdc46b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23070 ; free virtual = 35733
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23070 ; free virtual = 35733
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f8a3311e
+
+Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23070 ; free virtual = 35733
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 19efd737f
+
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23072 ; free virtual = 35734
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19efd737f
+
+Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23072 ; free virtual = 35734
+Phase 1 Placer Initialization | Checksum: 19efd737f
+
+Time (s): cpu = 00:00:00.8 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23072 ; free virtual = 35734
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1d229850a
+
+Time (s): cpu = 00:00:00.97 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23046 ; free virtual = 35709
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1bd68ffe1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35732
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1bd68ffe1
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35732
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 1db4db8a4
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.86 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23067 ; free virtual = 35730
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 2 LUTNM shape to break, 73 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 2, two critical 0, total 2, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 33 nets or LUTs. Breaked 2 LUTs, combined 31 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            2  |             31  |                    33  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            2  |             31  |                    33  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1c2aac316
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 2.4 Global Placement Core | Checksum: 2960f9384
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 2 Global Placement | Checksum: 2960f9384
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 28ddb927a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23067 ; free virtual = 35730
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: f71ca609
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 144d4bee8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1da029be0
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: fca9b17a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23065 ; free virtual = 35728
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1fa274be3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1d8047103
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 144adc45b
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35732
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 14d0f5d8d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 3 Detail Placement | Checksum: 14d0f5d8d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 185b288cd
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.366 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 178ce810a
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 178ce810a
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 4.1.1.1 BUFG Insertion | Checksum: 185b288cd
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.519. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1a1d5619b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 4.1 Post Commit Optimization | Checksum: 1a1d5619b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1a1d5619b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1a1d5619b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 4.3 Placer Reporting | Checksum: 1a1d5619b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 156f5c167
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Ending Placer Task | Checksum: 75ab6bad
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+37 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+# route_design 
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 4e78bb84 ConstDB: 0 ShapeSum: 2732b029 RouteDB: 0
+Post Restoration Checksum: NetGraph: 2d2cd5dd | NumContArr: fab1bcda | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2ad3087f1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2ad3087f1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2ad3087f1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 23dc1338c
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.558  | TNS=0.000  | WHS=-0.089 | THS=-0.741 |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000281532 %
+  Global Horizontal Routing Utilization  = 0.000229779 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 2736
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 2735
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 20e86a89b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 20e86a89b
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 3.2 Initial Net Routing
+Phase 3.2 Initial Net Routing | Checksum: 263ba2852
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Phase 3 Initial Routing | Checksum: 263ba2852
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 340
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.019  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 22e17a1ec
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.010 | TNS=-0.010 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1496b2bde
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+Phase 4 Rip-up And Reroute | Checksum: 1496b2bde
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 137b8365b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.134  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 137b8365b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 137b8365b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+Phase 5 Delay and Skew Optimization | Checksum: 137b8365b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 19e40accf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.134  | TNS=0.000  | WHS=0.248  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 19e40accf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+Phase 6 Post Hold Fix | Checksum: 19e40accf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.59628 %
+  Global Horizontal Routing Utilization  = 2.33249 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 19e40accf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 19e40accf
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23069 ; free virtual = 35731
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16e95055d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.134  | TNS=0.000  | WHS=0.248  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 16e95055d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+INFO: [Route 35-16] Router Completed Successfully
+
+Phase 11 Post-Route Event Processing
+Phase 11 Post-Route Event Processing | Checksum: 13b601f75
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+Ending Routing Task | Checksum: 13b601f75
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3260.352 ; gain = 0.000 ; free physical = 23068 ; free virtual = 35731
+# write_bitstream	-verbose -force "fpga_top.bit"
+Command: write_bitstream -verbose -force fpga_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[10] (net: mem/dataadr[9]) which is driven by a register (mips/dp/r2M/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[11] (net: mem/dataadr[10]) which is driven by a register (mips/dp/r2M/q_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[12] (net: mem/dataadr[11]) which is driven by a register (mips/dp/r2M/q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[13] (net: mem/dataadr[12]) which is driven by a register (mips/dp/r2M/q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[14] (net: mem/dataadr[13]) which is driven by a register (mips/dp/r2M/q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[1] (net: mem/dataadr[0]) which is driven by a register (mips/dp/r2M/q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[2] (net: mem/dataadr[1]) which is driven by a register (mips/dp/r2M/q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[3] (net: mem/dataadr[2]) which is driven by a register (mips/dp/r2M/q_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[4] (net: mem/dataadr[3]) which is driven by a register (mips/dp/r2M/q_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[5] (net: mem/dataadr[4]) which is driven by a register (mips/dp/r2M/q_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[6] (net: mem/dataadr[5]) which is driven by a register (mips/dp/r2M/q_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[7] (net: mem/dataadr[6]) which is driven by a register (mips/dp/r2M/q_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[8] (net: mem/dataadr[7]) which is driven by a register (mips/dp/r2M/q_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRARDADDR[9] (net: mem/dataadr[8]) which is driven by a register (mips/dp/r2M/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRBWRADDR[10] (net: mem/Q[9]) which is driven by a register (mips/dp/fetchstage/pcreg/q_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRBWRADDR[11] (net: mem/Q[10]) which is driven by a register (mips/dp/fetchstage/pcreg/q_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRBWRADDR[12] (net: mem/Q[11]) which is driven by a register (mips/dp/fetchstage/pcreg/q_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRBWRADDR[13] (net: mem/Q[12]) which is driven by a register (mips/dp/fetchstage/pcreg/q_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRBWRADDR[14] (net: mem/Q[13]) which is driven by a register (mips/dp/fetchstage/pcreg/q_reg[15]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 mem/RAM_reg_0 has an input control pin mem/RAM_reg_0/ADDRBWRADDR[9] (net: mem/Q[8]) which is driven by a register (mips/dp/fetchstage/pcreg/q_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC ZPS7-1] PS7 block required: The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Summary of write_bitstream Options:
++-------------------------+-------------------------+
+| Option Name             | Current Setting         |
++-------------------------+-------------------------+
+| COMPRESS                | FALSE*                  |
++-------------------------+-------------------------+
+| DCIUPDATEMODE           | ASREQUIRED*             |
++-------------------------+-------------------------+
+| TDOPIN                  | PULLUP*                 |
++-------------------------+-------------------------+
+| INITSIGNALSERROR        | ENABLE*                 |
++-------------------------+-------------------------+
+| DISABLE_JTAG            | NO*                     |
++-------------------------+-------------------------+
+| XADCENHANCEDLINEARITY   | OFF*                    |
++-------------------------+-------------------------+
+| OVERTEMPPOWERDOWN       | DISABLE*                |
++-------------------------+-------------------------+
+| GWE_CYCLE               | 6*                      |
++-------------------------+-------------------------+
+| GTS_CYCLE               | 5*                      |
++-------------------------+-------------------------+
+| LCK_CYCLE               | NOWAIT*                 |
++-------------------------+-------------------------+
+| ACTIVERECONFIG          | NO*                     |
++-------------------------+-------------------------+
+| TDIPIN                  | PULLUP*                 |
++-------------------------+-------------------------+
+| TMSPIN                  | PULLUP*                 |
++-------------------------+-------------------------+
+| UNUSEDPIN               | PULLDOWN*               |
++-------------------------+-------------------------+
+| USR_ACCESS              | (Not Enabled)*          |
++-------------------------+-------------------------+
+| PERFRAMECRC             | NO*                     |
++-------------------------+-------------------------+
+| USERID                  | 0XFFFFFFFF*             |
++-------------------------+-------------------------+
+| STARTUPCLK              | CCLK*                   |
++-------------------------+-------------------------+
+| XADCPOWERDOWN           | DISABLE*                |
++-------------------------+-------------------------+
+| TCKPIN                  | PULLUP*                 |
++-------------------------+-------------------------+
+| ICAP_SELECT             | AUTO*                   |
++-------------------------+-------------------------+
+| DONEPIN                 | PULLUP*                 |
++-------------------------+-------------------------+
+| CRC                     | ENABLE*                 |
++-------------------------+-------------------------+
+| JTAG_XADC               | ENABLE*                 |
++-------------------------+-------------------------+
+| XADCPARTIALRECONFIG     | DISABLE*                |
++-------------------------+-------------------------+
+| INITPIN                 | PULLUP*                 |
++-------------------------+-------------------------+
+| PROGPIN                 | PULLUP*                 |
++-------------------------+-------------------------+
+| DONE_CYCLE              | 4*                      |
++-------------------------+-------------------------+
+| MATCH_CYCLE             | NoWait                  |
++-------------------------+-------------------------+
+| DONEPIPE                | YES*                    |
++-------------------------+-------------------------+
+| SECURITY                | NONE*                   |
++-------------------------+-------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./fpga_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 3328.730 ; gain = 68.379 ; free physical = 22817 ; free virtual = 35482
+INFO: [Common 17-206] Exiting Vivado at Mon Jan  6 15:20:52 2025...
